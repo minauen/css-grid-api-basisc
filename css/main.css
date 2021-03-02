@@ -1,0 +1,162 @@
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	font-size: 2em;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-weight: 100;
+	background: rgb(39,40,54);
+	background: radial-gradient(circle, rgba(39,40,54,1) 8%, rgba(24,25,33,1) 100%);
+	color: #f9f5d7;
+}
+
+a {
+	color: #3e588c;
+}
+
+a:hover {
+	background: #3e588c;
+	color:  #f9f5d7;
+}
+
+nav {
+	position: fixed;
+	background: linear-gradient(0deg, rgba(33,34,45,1) 0%, rgba(39,40,54,1) 100%);
+	border-bottom: solid 1px #080B12;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: grid;
+	grid-auto-columns: 100px;
+	grid-auto-flow: column;
+	font-size: 20px;
+	line-height: 20px;
+	text-align: center;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	width: 100%;
+	display: block;
+	padding: 8px 0 10px 0;
+	box-sizing: border-box;
+}
+
+nav a:hover, nav a.active {
+	background: linear-gradient(0deg, rgb( 8, 11, 18) 0%, rgb(24, 25, 33) 100%);
+	border-left: solid 1px #313242;
+	border-right: solid 1px #313242;
+}
+
+.main {
+	padding: 120px 40px 40px;
+}
+
+h1, h2 {
+	font-weight: 300;
+	margin-bottom: 40px;
+}
+
+h2 span {
+	font-size: 60%;
+	font-weight: 100;
+	color: #f42c3e;
+}
+
+.grid > div,
+.flex > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.grid > div:before,
+.flex > div:before {
+	display: block;
+}
+
+.grid > div:not(:empty):before {
+	content: '';
+	display: none;
+}
+
+.grid > div:nth-child(1):before {
+	content: 'Grid Item 1';
+}
+
+.grid > div:nth-child(2):before {
+	content: 'Grid Item 2';
+}
+
+.grid > div:nth-child(3):before {
+	content: 'Grid Item 3';
+}
+
+.grid > div:nth-child(4):before {
+	content: 'Grid Item 4';
+}
+
+.grid > div:nth-child(5):before {
+	content: 'Grid Item 5';
+}
+
+.grid > div:nth-child(6):before {
+	content: 'Grid Item 6';
+}
+
+.grid > div:nth-child(7):before {
+	content: 'Grid Item 7';
+}
+
+.grid > div:nth-child(8):before {
+	content: 'Grid Item 8';
+}
+
+.grid > div:nth-child(9):before {
+	content: 'Grid Item 9';
+}
+
+.grid > div:nth-child(10):before {
+	content: 'Grid Item 10';
+}
+
+.grid > div:nth-child(11):before {
+	content: 'Grid Item 11';
+}
+
+.grid > div:nth-child(12):before {
+	content: 'Grid Item 12';
+}
+
+.flex > div:nth-child(1):before {
+	content: 'Flex Item 1';
+}
+
+.flex > div:nth-child(2):before {
+	content: 'Flex Item 2';
+}
+
+.flex > div:nth-child(3):before {
+	content: 'Flex Item 3';
+}
+
+.flex > div:nth-child(4):before {
+	content: 'Flex Item 4';
+}
+
+.flex > div:nth-child(5):before {
+	content: 'Flex Item 5';
+}
+
+.flex > div:nth-child(6):before {
+	content: 'Flex Item 6';
+}
+

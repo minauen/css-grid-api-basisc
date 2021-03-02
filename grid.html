@@ -1,0 +1,61 @@
+	<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
+		<link href="css/grid.css" rel="stylesheet">
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="start.html">start</a></li>
+				<li><a href="api.html">api</a></li>
+				<li><a href="grid.html" class="active">grid vs flex</a></li>
+				<li><a href="terminology.html">terminology</a></li>
+				<li><a href="code.html">code</a></li>
+				<li><a href="resources.html">resources</a></li>
+			</ul>
+		</nav>
+		<article class="main">
+			<h1>Grid vs Flex</h1>
+			<div class="grid-vs-flex">
+				<div class="flex">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+				<div class="grid">
+					<div class="one"></div>
+					<div class="two"></div>
+					<div class="three"></div>
+					<div class="four"></div>
+					<div class="five"></div>
+					<div class="six"></div>
+					<div class="seven"></div>
+					<div class="eight"></div>
+				</div>
+			</div>
+		</article>
+
+		<script>
+			var flex = document.querySelector('.flex');
+			flex.addEventListener('click', () => {
+				flex.classList.toggle('column');
+			});
+
+			var grid = document.querySelector('.grid');
+			var i = 0;
+			grid.addEventListener('click', () => {
+				i += 1;
+				grid.classList.toggle('b', i % 4 === 3);
+				grid.classList.toggle('c', i % 4 === 2);
+				grid.classList.toggle('d', i % 4 === 1);
+			});
+		</script>
+	</body>
+</html>
